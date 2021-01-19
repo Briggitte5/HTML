@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formulario Contacto </title>
+</head>
+<body>
+  <p><b>Formulario Contacto </b></p>
+    <form>
+      <label for="form-person-title">Provincia </label>
+      <input id="form-person-title" type="text" list="lang" >
+      <datalist id="lang">
+           <option value="Salamanca">
+           <option value="Cádiz">
+           <option value="Tarragona">
+           <option value="Asturias">
+       </datalist>  
+       <br><br><input type="text" autocomplete="on"  required=""></br></br>
+       <input type="number" name="Numeros" min="0" max="10">
+       <br><br><input type="file" name="Archivo"></br></br>
+       <label for="pass1">Contraseña </label>
+       <input type="password" required="password" name="pass1" minlength="8" id="pass1">
+       <p>
+        <label for="pass2">Repite la contraseña</label>
+        <input type="password" required="password" name="pass2" minlength="8" id="pass2">
+       </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" required="email" id="email" name="email" minlength="13" maxlength="30">
+        </p>
+        <progress value="99" min="0" max="100"></progress>
+       
+        <p>
+            <label for="acepto">Acepto términos y condiciones</label>
+            <input type="checkbox" id="acepto" required>
+        </p>
+        <p>
+          <button type="submit" onclick="passwordValidation()">Enviar</button>
+        </p>
+      </form>
+
+    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions">Guía para expresiones regulares</a>
+    
+</body>
